@@ -40,7 +40,27 @@
 - [CustomFunctionalInterfaceExamples.java](src%2FCustomFunctionalInterfaceExamples.java)
 - [FunctionalInterfaceRealExamples.java](src%2FFunctionalInterfaceRealExamples.java)
 - Target method is generic 에러
-- Predicate<T> vs Predicate<? super T> 
+- Predicate<T> vs Predicate<? super T>
+
+### 08. Stream API - 01 시작하기전에, 02 Identity Function
+
+- [StreamPrelude.java](src%2FStreamPrelude.java)
+
+### 08. Stream API - 03 Stream API 01 무한 collection, 02 Stream vs 예전방식 
+
+- [StreamExamples1.java](src%2FStreamExamples1.java)
+- [StreamExamples2.java](src%2FStreamExamples2.java)
+- Stream은 Lazy Iterator다.
+- Stream API는 게으르게 동작하기 때문에 효율적이다.
+
+### 08. Stream API - 03 Stream API 03 기초
+
+- [StreamExamples3.java](src%2FStreamExamples3.java)
+- Intermediate Operation Method
+  - Stream을 리턴하기 때문에 계속 Method Chaining을 통해서 무엇을 해야할지 Stream에게 지시할 수 있다. 
+- Terminal Operation Method
+- 외부 반복 (for) vs 내부 반복 (stream)
+
 ---
 
 출처 :
