@@ -28,8 +28,19 @@
 ### 05. `Supplier`, The Master of Lazy
 
 - [FunctionalInterfaceExamples.java](src%2FFunctionalInterfaceExamples.java)
-- Supplier<T> : boolean test(T t);
+- Supplier<T> : T get();
 
+### 06. 직접 만드는 Functional Interface 어때요? 참 쉽죠?
+
+- [CustomFunctionalInterfaceExamples.java](src%2FCustomFunctionalInterfaceExamples.java)
+- @FunctionalInterface : abstract 메서드가 하나가 아니면 컴파일 에러 발생!
+
+### 07. 실전 예제와 Functional Interface 의 제약 사항
+
+- [CustomFunctionalInterfaceExamples.java](src%2FCustomFunctionalInterfaceExamples.java)
+- [FunctionalInterfaceRealExamples.java](src%2FFunctionalInterfaceRealExamples.java)
+- Target method is generic 에러
+- Predicate<T> vs Predicate<? super T> 
 ---
 
 출처 :

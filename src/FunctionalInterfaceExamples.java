@@ -58,7 +58,7 @@ public class FunctionalInterfaceExamples {
         printIfValidIndex(-1, () -> getVeryExpensiveValue());
         printIfValidIndex(-2, () -> getVeryExpensiveValue());
         long end = System.currentTimeMillis();
-        System.out.println("It took " + (end - start) / 1000 + " seconds.");
+        System.out.println("[Supplier] It took " + (end - start) / 1000 + " seconds.");
     }
 
     private static <T> List<T> filter(List<T> list, Predicate<T> filter) {
@@ -71,14 +71,15 @@ public class FunctionalInterfaceExamples {
         return result;
     }
 
-//    private static void printIfValidIndex(int num, String value) {
-//        if (num >= 0) {
-//            System.out.println("[Supplier] value = " + value);
-//        } else {
-//            System.out.println("[Supplier] Invalid");
-//        }
-//    }
+    private static void printIfValidIndex(int num, String value) {
+        if (num >= 0) {
+            System.out.println("[Supplier] value = " + value);
+        } else {
+            System.out.println("[Supplier] Invalid");
+        }
+    }
 
+    // 위 메서드에서는 9초가 걸리지만 아래 메서드에서는 3초가 걸린다 -> 값을 만족하는 경우에 가져오기 때문
     private static void printIfValidIndex(int num, Supplier<String> valueSupplier) {
         if (num >= 0) {
             System.out.println("[Supplier] value = " + valueSupplier.get());
