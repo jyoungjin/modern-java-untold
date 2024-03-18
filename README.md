@@ -59,7 +59,21 @@
 - Intermediate Operation Method
   - Stream을 리턴하기 때문에 계속 Method Chaining을 통해서 무엇을 해야할지 Stream에게 지시할 수 있다. 
 - Terminal Operation Method
-- 외부 반복 (for) vs 내부 반복 (stream)
+- 외부 반복 (for) vs 내부 반복 (stream) 
+
+### 08. Stream API - 03 Stream API 04 좀더 실용적인 예
+
+- [StreamExamples4.java](src%2FStreamExamples4.java)
+
+### 08. Stream API - 03 Stream API 05 Parallel Programming (with ParallelStream)
+
+- [StreamExamples5Parallel.java](src%2FStreamExamples5Parallel.java)
+
+### 08. Stream API - 03 Stream API 06 ParallelStream 성능 테스트
+- [StreamExamples5ParallelPerformance.java](src%2FStreamExamples5ParallelPerformance.java)
+
+### 08. Stream API - 03 Stream API 07 ParallelStream 주의 사항
+- 상황에 따라 parallel stream 이 유리할 수도 아닐 수도 있다. 상황에 맞게 사용하자!
 
 ---
 
