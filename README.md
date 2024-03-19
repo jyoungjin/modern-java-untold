@@ -73,7 +73,24 @@
 - [StreamExamples5ParallelPerformance.java](src%2FStreamExamples5ParallelPerformance.java)
 
 ### 08. Stream API - 03 Stream API 07 ParallelStream 주의 사항
+- [StreamExamples5ParallelPerformancePractical.java](src%2FStreamExamples5ParallelPerformancePractical.java)
 - 상황에 따라 parallel stream 이 유리할 수도 아닐 수도 있다. 상황에 맞게 사용하자!
+
+### 09. 01 Closure == Close Over (뒤덮다)
+- [ClosureExamples.java](src%2FClosureExamples.java)
+- First Class Function : Function이 First Class Citizen을 의미한다.
+  1. parameter로 넘길 수 있다.
+  2. return 값으로 사용할 수 있다.
+  3. variable / data structure에 저장할 수 있다.
+- java 8 이전에는 final 이어야만 했지만 java 8 이후에는 final or effectively final 이면 된다.
+  - effectively final : 선언 후 재정의 하지 않은 변수
+- Anonymous Class와 Lambda Expression의 차이
+  1. this가 가리키는 scope의 차이 : lambda expression의 경우 object 자체의 scope이 없다.
+  2. anonymous의 경우 오버로딩이 불가했지만 lambda의 경우 
+
+### 09. 02 Closure 및 Lambda Expression 내부 구현
+- [ClosureExamples2.java](src%2FClosureExamples2.java)
+
 
 ---
 
